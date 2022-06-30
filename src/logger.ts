@@ -3,12 +3,11 @@ var logItemCounter = 0;
 export const addItem = (logstring: any) => {
   var node = document.createElement("li");
   var textnode = document.createTextNode(
-    logstring +
-      " - " +
+    logItemCounter++ +
+      "-" +
       new Date().toLocaleTimeString() +
-      "(item: " +
-      logItemCounter++ +
-      ")"
+      "===> " +
+      logstring
   );
   node.appendChild(textnode);
   //   var d = document
