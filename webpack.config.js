@@ -5,7 +5,7 @@ const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 // import css from "file.css";
 
 module.exports = {
-  entry: "./src/code.ts",
+  entry: "./src/code.tsx",
   mode: "development",
   devtool: "inline-source-map",
   output: {
